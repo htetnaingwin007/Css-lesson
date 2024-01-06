@@ -9,13 +9,14 @@ h1 {
     letter-spacing: 10px;
     word-spacing: 30px;
 }
+
 /* universal selector */
-/*
 *{
-    color:red;
-    text-transform: uppercase;
+    /* color:red; */
+    /* text-transform: uppercase; */
+    margin: 0px;
+    padding: 0cap;
 }
-*/
 /* tag selector/element selector */
 h2 {
     color: red;
@@ -54,4 +55,90 @@ a[title="google"]{
 /* child selector */
 .child>a{
     color:red;
+}
+
+/* pseudo */
+a:link {
+    color: crimson;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+a:active {
+    color: blue;
+}
+
+a:visited {
+    color: fuchsia;
+}
+
+/* Target */
+:target {
+    color: forestgreen;
+    border: 20px solid rebeccapurple;
+    letter-spacing: 20px;
+}
+
+/* border */
+.borderone{
+    border: 5px dashed red;
+}
+.bordertwo{
+    border-left:20px yellow solid;
+    border-top: 20px red solid;
+}
+.borderthree{
+   /* border-style: solid; */
+   /* all four */
+   /* border-style:solid dotted ; */
+   /* T&B / L&R */
+   /* border-style:dashed solid dotted; */
+   /* T / L&R /B */
+   border-style: dotted double solid dashed;
+   /* T / R / B / L */
+}
+.borderwidth{
+    border-width: 20px 5px 10px 30px;
+    border-style: dotted;
+    border-color: red green yellow skyblue ;
+}
+/* Margin */
+.margin{
+    border: 3px solid red;
+    margin-top: 100px;
+}
+/* Padding */
+.padding{
+    border: 2px solid black;
+    padding-top: 40px;
+
+}
+/* layout */
+.inline{
+    border: 2px solid red;
+    width: 300px;
+    display: inline-block;
+}
+.block{
+    border: 2px solid black;
+    width: 300px;
+    display: inline-block;
+}
+
+/* float */
+
+.float_left img{
+    
+    width: 30%;
+    float:left
+}
+.clear{
+    clear: both;
+}
+.float_right img{
+    
+    width: 30%;
+    float: right;
 }

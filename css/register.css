@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    color: red;
+}
+body{
+    background-color: rgb(166, 223, 223);
+}
+form{
+    width: 40%;
+    margin:auto;
+}
+input[type="text"],input[type="file"],input[type="email"],input[type="number"],input[type="date"]{
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="date"]:focus,#address:focus{
+    border: 4px solid rgb(187, 38, 38);background-color: chartreuse;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    letter-spacing: 5px;
+}
+
+#address{
+    width: 100%;
+    height: 90px;
+    outline: none;
+}
+
+input[type="checkbox"]:enabled + label{
+    color: yellow;
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked + label{
+    color: red;
+    font-style: normal;
+}
+
+input[type="checkbox"]:disabled + label{
+    color: gray;
+}
+
+
+li:first-child{
+    background-color: green;
+}
+li:last-child{
+    background-color: red;
+}
+li:nth-child(5){
+    background-color: yellow;
+}
+p:empty{
+    height: 20px;
+    background-color: aqua;
+}
+.thanku{
+    text-align: center;
+}
