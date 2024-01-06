@@ -142,3 +142,73 @@ a:visited {
     width: 30%;
     float: right;
 }
+/* grid */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div{
+    padding: 20px 0px;
+    color: white;
+    text-align:center ;
+}
+.gridone{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridtwo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap:20px;
+    grid-column-gap:50px;
+    /* grid-gap: 50px; */
+}
+.gridthree,.gridfour{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.rowadd{
+    grid-row-start:2 ;
+    grid-row-end:4 ;
+}
+.columnadd{
+    grid-column-start: 2;
+    grid-column-end: 4 ;
+}
+/* position */
+
+.relative_parent{
+    border: 2px;
+    color: red;
+    border-style: solid;
+    width: 1000px;
+    height: 600px;
+}
+.position_relative{
+    border: 2px dotted rgb(11, 100, 155);
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top:100px ;
+    left:100px ;
+}
+.absolute_parent{
+    border: 2px solid purple;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+}
+.position_absolute{
+    border: 2px dotted rgb(155, 109, 11);
+    width: 500px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+/* font */
+.online_font{
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+}
