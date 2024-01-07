@@ -212,3 +212,11 @@ a:visited {
     font-family: 'Caveat', cursive;
     font-size: 20px;
 }
+
+@font-face{
+    font-family: Great Vibes;
+    src:url(../Great_Vibes/OFL.txt);
+}
+.offlinefont{
+    font-family: 'Great Vibes', cursive;
+}
